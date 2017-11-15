@@ -1,0 +1,81 @@
+.App {
+  font-family: "Raleway";
+  display: block;
+  justify-content: center;
+  padding-top: 50px;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background-color: black;
+}
+
+.App-Container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Todos-Container {
+  width: 25vw;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Todo {
+  width: 25vw;
+  font-size: 28px;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 10px;
+  display: flex;
+  letter-spacing: 2px;
+}
+
+input {
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  background-color: black;
+  padding: 8px;
+  font-size: 25px;
+  height: 1em;
+  width: 25vw;
+  outline: none;
+  color: white;
+  border: none;
+  border-bottom: 0.3px solid white;
+  transition: .2s;
+}
+
+input:focus {
+  border-bottom: 1.5px solid white;
+}
+
+.Title {
+  font-family: "Raleway";
+  font-size: 50px;
+  font-weight: Lighter;
+  letter-spacing: 8px;
+}
+
+.Time {
+  letter-spacing: 5px;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+hr {
+  width: 25vw;
+}
+
+label {
+  padding-bottom: 10px;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.Time {
+  font-family: "Open Sans Condensed";
+}
