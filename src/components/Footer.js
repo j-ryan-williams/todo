@@ -3,7 +3,6 @@ import axios from 'axios';
 import styled from 'styled-components';
 
 const FooterContainer = styled.div`
-  position: fixed;
   left: 0px;
   bottom: 0px;
   height: 100px;
@@ -13,12 +12,13 @@ const FooterContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
+  color: #F9A849;
 `
 
 const News = styled.div`
   border-radius: 5px;
   background-color: rgba(0,0,0,.3);
-  width: 40%;
+  width: 90%;
   height: inherit;
   text-align: center;
   display: flex;
@@ -39,7 +39,7 @@ const LinkURL = styled.a`
   font-size: 13px;
   width: inherit;
   text-align: center;
-  width: 70%;
+  width: 90%;
 `
 
 class Footer extends Component {

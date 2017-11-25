@@ -1,44 +1,9 @@
 import React, {Component} from 'react';
-import styled from 'styled-components';
 import FontAwesome from 'react-fontawesome';
 
-const TodosContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-`
-const Todo = styled.div`
-  font-size: 16px;
-  display: flex;
-  width: 100%;
-  height: 3em;
-  align-items: center;
-  justify-content: space-between;
-  letter-spacing: 2px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.11);
-`
-const Item = styled.div`
-  padding-left: 10px;
-  font-family: Lato;
-  font-size: 22px;
-  font-weight: 100;
-  line-height: normal;
-
-`
-const Delete = styled.button`
-  padding-right: 10px;
-  border: none;
-  outline: none;
-  height: inherit;
-  width: 50px;
-  background-color: transparent;
-  box-sh
-`
+import {
+  TodosContainer, Todo, Item, Delete
+} from './styled/TodosStyled';
 
 class Todos extends Component {
   render() {
