@@ -1,5 +1,52 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import styled from 'styled-components';
+
+const FooterContainer = styled.div`
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 100px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+`
+
+const News = styled.div`
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.3);
+  width: 40%;
+  height: inherit;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+const Title = styled.p`
+  font-family: Lato;
+  margin-bottom: 10px;
+  font-size: 13px;
+`
+const LinkURL = styled.a`
+  font-family: Lato;
+  font-weight: 100;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  width: inherit;
+  text-align: center;
+`
+const Source = styled.p`
+  font-family: Lato;
+  font-weight: 100;
+  font-size: 10px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+`
 
 class Footer extends Component {
   constructor(props) {
@@ -14,7 +61,6 @@ class Footer extends Component {
 componentDidMount() {
   axios.get("https://newsapi.org/v2/top-headlines?sources=four-four-two&apiKey=9122e296ad66404dace4f8716c8819fc")
     .then((res) => {
-      console.log(res);
       this.setState({
         title: res.data.articles[0].title,
         content: res.data.articles[0].description,
@@ -27,12 +73,13 @@ componentDidMount() {
 
   render() {
     return (
-      <div className="Footer">
-        <div className="Axios-News">
-          <p>{this.state.title}</p>
-          <a href={this.state.link}>{this.state.content}</a>
-        </div>
-      </div>
+      <FooterContainer>
+        <News>
+          <Source>FourFourTwo News</Source>
+          <Title>{this.state.title}</Title>
+          <LinkURL href={this.state.link}>{this.state.content}</LinkURL>
+        </News>
+      </FooterContainer>
     );
   }
 
