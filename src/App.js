@@ -7,7 +7,6 @@ import Footer from './components/Footer';
 import Greeting from './components/Greeting';
 
 import 'moment-timezone';
-import './styles/App.css';
 
 const AppContainer = styled.div`
 font-family: 'Work Sans';

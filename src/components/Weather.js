@@ -23,9 +23,10 @@ const Data = styled.div`
 `
 const City = styled.p`
   font-family: Lato;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 14px;
   padding-top: 5px;
+  letter-spacing: 1.5px;
 `
 const Temp = styled.p`
   font-family: Lato;
@@ -68,7 +69,7 @@ class Weather extends Component {
         <WeatherContainer>
           <Logo src={this.state.logo} alt="" />
           <Data>
-            <Temp>{this.state.temp_f}&#176;</Temp>
+            <Temp>{this.state.temp_f}&#176;F</Temp>
             <City>{this.state.city}, {this.state.state}</City>
           </Data>
         </WeatherContainer>

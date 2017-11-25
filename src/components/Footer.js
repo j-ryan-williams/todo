@@ -39,13 +39,7 @@ const LinkURL = styled.a`
   font-size: 13px;
   width: inherit;
   text-align: center;
-`
-const Source = styled.p`
-  font-family: Lato;
-  font-weight: 100;
-  font-size: 10px;
-  margin-top: -10px;
-  margin-bottom: 20px;
+  width: 70%;
 `
 
 class Footer extends Component {
@@ -75,7 +69,6 @@ componentDidMount() {
     return (
       <FooterContainer>
         <News>
-          <Source>FourFourTwo News</Source>
           <Title>{this.state.title}</Title>
           <LinkURL href={this.state.link}>{this.state.content}</LinkURL>
         </News>

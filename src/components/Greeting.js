@@ -28,7 +28,7 @@ class Greeting extends Component {
     }
     return(
       <GreetingContainer>
-        <p>{greet}{name}</p>
+        <p>{greet} {name}</p>
       </GreetingContainer>
     )
   }
