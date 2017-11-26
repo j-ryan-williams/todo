@@ -2,13 +2,13 @@ import React, {Component} from 'react';
 import Moment from 'react-moment';
 import Todos from './components/Todos';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import News from './components/News';
 import Greeting from './components/Greeting';
 
 import {
   AppContainer, Main, Left, Middle,
   Right, Time, Label, Input
-} from './styled/AppStyled';
+} from './components/styled/AppStyled';
 
 import 'moment-timezone';
 
@@ -51,7 +51,7 @@ class App extends Component {
         <Header />
         <Main>
           <Left>
-            <Footer />
+            <News />
           </Left>
           <Middle>
             <Greeting />
@@ -72,7 +72,7 @@ class App extends Component {
             />
           </Middle>
           <Right>
-            <h1>Hello</h1>
+            
           </Right>
         </Main>
       </AppContainer>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const AppContainer = styled.div`
-  font-family: 'Work Sans';
+  font-family: 'Lato';
   display: flex;
   width: 100%;
   height: 100vh;
@@ -16,25 +16,28 @@ export const Main = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  padding-top: 30px;
   align-items: center;
 `
 export const Left = styled.div`
   display: flex;
   align-content: flex-end;
   width: 30%;
+  padding-top: 50px;
   height: inherit;
 `
 export const Middle = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
   width: 40%;
   height: inherit;
 `
 export const Right = styled.div`
   display: flex;
   justify-content: center;
+  padding-top: 50px;
   width: 30%;
   height: inherit;
 `
@@ -62,7 +65,11 @@ export const Input = styled.input`
   padding: 0 8px;
   color: white;
   border: none;
-  border-bottom: .3px solid white;
+  border-bottom: thin solid #A2A2A2;
   outline: none;
   background-color: transparent;
+  transition: border-bottom .5s ease;
+  &:hover, &:focus, &:after {
+    border-bottom: 2px solid #FFFFFF;
+  }
 `

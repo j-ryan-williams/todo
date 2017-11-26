@@ -18,7 +18,7 @@ class Todos extends Component {
                 </Item>
                 <div className="Todo-Delete">
                   <Delete className="btn" onClick={(e) => this.props.deleteTodo(index)} type="button">
-                    <FontAwesome name="close" size='3x' style={{ color: '#EEEEEE'}}/>
+                    <FontAwesome name="times" size='2x' style={{ color: '#EEEEEE'}}/>
                   </Delete>
                 </div>
               </Todo>

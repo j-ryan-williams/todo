@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const GreetingContainer = styled.div`
+const GreetUser = styled.p`
   font-family: Lato;
   display: flex;
   align-items: center;
@@ -14,22 +14,20 @@ const GreetingContainer = styled.div`
 
 class Greeting extends Component {
   render() {
+    let name = "Ryan"; //prompt("What is your name?");
     let today = new Date();
     let hrs = today.getHours();
     let greet;
-    let name = 'Ryan'
 
     if (hrs < 12) {
-      greet = 'Good morning,'
+      greet = 'Good morning, ' + name;
     } else if (hrs >= 12 && hrs <= 17) {
-      greet = 'Good afternoon, '
+      greet = 'Good afternoon, ' + name;
     } else if (hrs >= 18) {
-      greet = 'Good evening, '
+      greet = 'Good evening, ' + name;
     }
     return(
-      <GreetingContainer>
-        <p>{greet} {name}</p>
-      </GreetingContainer>
+        <GreetUser>{greet}!</GreetUser>
     )
   }
 }

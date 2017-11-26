@@ -3,7 +3,7 @@ import Weather from './Weather';
 
 import {
   Wrapper, FocalContainer, Brand
-} from '../styled/HeaderStyled';
+} from './styled/HeaderStyled';
 
 const Header = () => {
   return (
